@@ -47,7 +47,7 @@ function Header() {
             <h2 className="banner-heading">Frederick Sanger</h2>
             <hr className='line' />
             <p>Nobel Prizes: Chemistry in 1958, Chemistry in 1980 (shared with Paul Berg and Walter Gilbert).</p>
-            <p>Paragraph 2: More text for the banner...</p>
+            <p>Notable Achievements: Work on the structure of proteins, contributions to DNA sequencing.</p>
           </div>
         </div>
       </div>
