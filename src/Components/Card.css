@@ -1,0 +1,68 @@
+.card {
+    width: 750px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'source-code-pro';
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #7C1506;
+    color: white;
+  }
+  
+  .card h3 {
+    margin-bottom: 12px;
+  }
+  
+  .card p {
+    margin: 8px 0;
+  }
+  
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  color: #d6b913;
+}
+
+
+.card-image {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  margin-right: 25px;
+}
+
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left; 
+}
+
+.card-content-year{
+  font-family: 'Georgia';
+  font-size: 20px;
+}
+
+
+.line {
+  border-top: 1px solid #ffd700;
+  margin: 10px 0;
+  transition: border-color 0.3s ease-in-out; 
+}
+.card:hover .line {
+  border-color: #fff;
+}
