@@ -4,7 +4,7 @@ import './index.css';
 import Header from './Components/Header';
 import Buttons from './Components/Buttons';
 import Card from './Components/Card';
-import axios from 'axios';
+// import axios from 'axios';
 import SearchBar from './Components/SearchBar';
 
 
@@ -62,8 +62,13 @@ function App() {
 	}
 
 	async function getData() {
-		let data = await axios.get(url);
-		data = data['data']['prizes'];
+		// let data = await axios.get(url);
+		fetch(url)
+		  .then(response => response.json())
+		  .then(data => {
+			data = data['prizes']
+		  });
+		// data = data['data']['prizes'];
 		for (var prize in data) {
 			var name = '';
 			var motive = '';
